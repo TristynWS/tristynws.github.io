@@ -14,23 +14,35 @@
    	    background: linear-gradient(to right, #333, #555);
    	    color: #ccc;
         }
-        .navbar {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #222; /* Even darker background for navbar */
-    	    color: white;
-            padding: 10px 0;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            padding: 0 15px;
-            font-weight: bold;
-        }
+        .name {
+	    text-align: right;
+	    font-size: 20px; /* Adjust as needed */
+	    color: #f0f0f0; /* Light off-white color */
+	    position: absolute;
+	    top: 10px; /* Adjust as needed */
+	    right: 20px; /* Adjust as needed */
+	    z-index: 20;
+	}
+	.navbar {
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    background-color: #222; /* Darker background for navbar */
+	    color: white;
+	    padding: 10px 0;
+	    flex-wrap: wrap; /* Ensure items wrap if space is constrained */
+	}
+	.navbar a, .navbar a:visited {
+	    color: white;
+	    text-decoration: none;
+	    padding: 0 15px;
+	    font-weight: bold;
+	}
         .container {
-            max-width: 800px;
+            position: relative;
+	    max-width: 800px;
             margin: auto;
+	    margin-top: 80px;
             padding: 20px;
         }
         header, .skills, .projects {
@@ -47,57 +59,81 @@
         }
         h1, h2 {
             color: #5D3B99;
+	    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
         }
         p {
             color: #f0f0f0; /* Light off-white, adjust as needed */
             line-height: 1.6;
         }
         .skills ul, .projects ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .skills li, .projects li {
-            background-color: #333; /* Darker background for these sections */
-	    color: #f0f0f0; /* Lighter text for better readability */
-            margin-bottom: 10px;
-            padding: 10px;
-            border-radius: 4px;
-        }
+	    display: grid;
+	    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	    gap: 20px;
+	}
+	
+	.skills li, .projects li {
+	    background-color: #333; /* Darker theme */
+	    color: #f0f0f0; /* Lighter text for readability */
+	    margin-bottom: 10px;
+	    padding: 20px;
+	    border-radius: 4px;
+	    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Adjusted shadow for consistency */
+	    transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.skills li:hover, .projects li:hover {
+	    transform: translateY(-5px);
+	    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Enhanced hover effect */
+	}
 	header h1 {
+	    margin: 0;
 	    font-size: 2.5rem;
 	    color: #5D3B99; /* Light purple, adjust as needed */
 	    text-shadow: 2px 2px 4px #222;
 	}
 	.profile-pic {
-	    width: 100px;
-	    height: 100px;
+	    z-index: 10;
+	    position: absolute; 
+	    top: -75px;
+	    left:20px;
+	    width: 150px; /* Adjust based on your preference */
+	    height: 150px; /* Keep it equal to width for a circle */
 	    border-radius: 50%;
-	    border: 2px solid #444; /* Adjust border color as needed */
+	    border: 2px solid #444;
 	    object-fit: cover;
-	    display: block;
-	    margin: 20px auto;
-	}	
-
-<div class="profile-info">
-	<h2>Tristyn Eddie Watkins-Sanchez</h2>
-	<a href="https://www.linkedin.com/in/eddie-sanchez/" target="_blank">LinkedIn</a>
-</div>
+	    margin-bottom: 20px;
+	}
+	.container-welcome {
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    flex-direction: column; /* Stack elements vertically */
+	    text-align: center; /* Center text alignment */
+	    padding: 50px 20px; /* Add some padding */
+	}
+	.name-right-aligned {
+	    text-align: right;
+	    align-self: flex-end; /* Right-aligns within the flex container */
+	    color: #5D3B99;
+	    width: 100%; /* Ensures the text can align to the right edge */
+	    padding-right: 20px; /* Adjust as needed */
+	}
 
     </style>
 </head>
 <body>
-
-    <div class="navbar">
-        <a href="#welcome">Home</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-	<a href="resume.pdf" target="_blank">Resume</a>
-    </div>
+	<div class="navbar">
+	    <a href="#welcome">Home</a>
+	    <a href="#skills">Skills</a>
+	    <a href="#projects">Projects</a>
+	    <a href="resume.pdf" target="_blank">Resume</a>
+	    <a href="https://www.linkedin.com/in/eddie/sanchez/" target="_blank">LinkedIn</a>
+	</div>
 
     <div class="container" id="welcome">
         <img src="profile-pic.png" alt="Profile Picture" class="profile-pic">
-	<header>
-            <h1>Welcome to My Portfolio</h1>
+    	<header>
+            <h1 class="name-right-aligned">Tristyn Eddie Watkins-Sanchez</h1>
             <p>Hello! I'm thrilled you're here to explore my corner of the digital world. My journey through the realms of technology and design has been anything but ordinary. With a foundation in construction management and a profound curiosity for how things are built—from the code that powers an app to the structures that define our cities—I've carved a unique path into UX/UI design. Here, you'll discover a portfolio that's as much about innovative solutions as it is about meaningful connections, reflecting my belief in the transformative power of technology to make our lives better.</p>
             <p>Diving deep into AI over the last 9 months, I've honed my skills in data training, uncovering the intricacies of machine learning models, and ensuring they perform flawlessly. My work, remote yet closely connected to the pulse of technological advancements, spans from developing empathetic applications to enhancing communication with a touch of AI magic.</p>
         </header>
