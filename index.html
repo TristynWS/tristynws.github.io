@@ -173,6 +173,26 @@
 	        font-size: 1.5rem; /* Smaller font size for smaller screens */
 	    }
 	}
+	
+	@media (max-width: 768px) {
+	    .profile-pic {
+	        width: 100px; /* Smaller on mobile */
+	        height: 100px; /* Keep aspect ratio */
+	        top: 10px; /* Adjust position so it doesn't overlap text */
+	        left: calc(50% - 50px); /* Center it */
+	    }
+
+	    .container-welcome {
+	        padding-top: 120px;
+	    }
+	}
+	@media (max-width: 768px) {
+	    .navbar a, .navbar a:visited {
+	        padding: 0 10px; /* Smaller padding */
+	        font-size: 14px; /* Smaller font size */
+	    }
+	}
+
 
     </style>
 </head>
