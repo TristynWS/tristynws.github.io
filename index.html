@@ -106,7 +106,6 @@
 	    margin-bottom: 20px; 
 	}
 
-
 	header h1 {
 	    margin: 0;
 	    font-size: 2rem;
@@ -142,7 +141,7 @@
 
 	.top-header {
 	    text-align: center;
-	    align-self: flex-end; /* Right-aligns within the flex 					container */
+	    align-self: flex-end; 
 	    color: #5D3B99;
 	    white-space: nowrap;
 	    margin: 0;
@@ -165,6 +164,24 @@
 	    position: relative;
 	}
 
+	.projects a {
+	    color: white;
+	    text-decoration: none;
+	    background-color: transparent; 
+	    padding: 5px 10px; 
+	    display: inline-block;
+	    border: none; 
+	}
+
+	.projects a:hover {
+    	    text-decoration: underline;
+	}
+	
+	.projects ul {
+	    list-style: none; /* Removes bullet points */
+	    padding: 0;
+	}
+
 	@media (max-width: 768px) {
 	    .container {
 	        padding: 10px; /* Smaller padding on smaller screens */
@@ -172,9 +189,6 @@
 	    .name-container h1 {
 	        font-size: 1.5rem; /* Smaller font size for smaller screens */
 	    }
-	}
-	
-	@media (max-width: 768px) {
 	    .profile-pic {
 	        width: 100px; /* Smaller on mobile */
 	        height: 100px; /* Keep aspect ratio */
@@ -185,12 +199,16 @@
 	    .container-welcome {
 	        padding-top: 100px;
 	    }
-	}
-	@media (max-width: 768px) {
+
 	    .navbar a, .navbar a:visited {
 	        padding: 0 10px; /* Smaller padding */
 	        font-size: 14px; /* Smaller font size */
 	    }
+
+	    .projects a {
+        	padding: 8px 12px; /* Slightly smaller padding on mobile */
+        	font-size: 14px; /* Slightly smaller font size for mobile */
+    	    }
 	}
 
 
@@ -205,6 +223,7 @@
 	    <a href="#skills">Skills</a>
 	    <a href="#projects">Projects</a>
 	    <a href="resume.pdf" target="_blank">Resume</a>
+	    <a href="https://github.com/TristynWS" target="_blank">GitHub</a>
 	    <a href="https://www.linkedin.com/in/eddie-sanchez/" target="_blank">LinkedIn</a>
 	</div>
 
@@ -231,12 +250,17 @@
     </div>
 
     <div class="container projects" id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>AI-ngel Bro App: An application leveraging AI to interpret emotional undertones in text messages, enhancing communication and understanding.</li>
-            <!-- Add more projects here as you develop them. Showcase the range of your skills and interests, from technical projects involving coding and app development to initiatives that reflect your commitment to sustainability and community engagement.</li>
-</ul>
+    <h2>Projects</h2>
+    <ul>
+        <li><a href="C:\Users\trist\Documents\Portfolio\tristynws.github.io\AI-ngel Bro - White Paper.pdf" target="_blank">AI-ngel Bro App White Paper</a></li>
+        <li><a href="C:\Users\trist\Documents\Portfolio\tristynws.github.io\AI-ngel Bro - Figma Mockup.pdf" target="_blank">AI-ngel Bro Figma Mockup</a></li>
+        <li><a href="C:\Users\trist\Documents\Portfolio\tristynws.github.io\AI-ngel Bro - Figma Flow.pdf" target="_blank">AI-ngel Bro Wireframe</a></li>
+        <li><a href="C:\Users\trist\Documents\Portfolio\tristynws.github.io\AI-ngel Bro - Original Sketch.pdf" target="_blank">AI-ngel Bro Original Sketch</a></li>
+	<li><a href="C:\Users\trist\Documents\Portfolio\tristynws.github.io\Website Usability Testing Report 2023.pdf" target="_blank">Example Usability Testing Report</a></li>
+    </ul>
 </div>
+
+
 
 </body>
 </html> 
