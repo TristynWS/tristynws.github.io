@@ -10,8 +10,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            /* Gradient background from darker to lighter grey */
-   	    background: linear-gradient(to right, #333, #555);
+            background: linear-gradient(to right, #333, #555);
    	    color: #ccc;
         }
 
@@ -29,10 +28,10 @@
 	    display: flex;
 	    justify-content: center;
 	    align-items: center;
-	    background-color: #222; /* Darker background for navbar */
+	    background-color: #222;
 	    color: white;
 	    padding: 10px 0;
-	    flex-wrap: wrap; /* Ensure items wrap if space is constrained */
+	    flex-wrap: wrap; /* Items wrap if space is constrained */
 	}
 
 	.navbar a, .navbar a:visited {
@@ -43,7 +42,7 @@
 	}
 
 	.navbar a:hover {
-	    color: #5D3B99; /* Change color on hover */
+	    color: #5D3B99;
 	}
 
         .container {
@@ -51,12 +50,11 @@
 	    max-width: 800px;
             margin: auto;
 	    padding: 20px;
-	    margin-bottom: 20px;
 	}
 
         header, .skills, .projects {
-            background-color: #333; /* Darker background for these sections */
-    	    color: #f0f0f0; /* Lighter text for better readability */
+            background-color: #333; 
+    	    color: #f0f0f0; /* Lighter text */
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 5px;
@@ -79,7 +77,7 @@
         }
 
         .skills ul, .projects ul {
-       	    list-style-type: none; /* Removes bullet points */
+       	    list-style-type: none; /* Removed bullet points */
     	    padding: 0;
     	    margin: 0;
     	    display: grid;
@@ -88,8 +86,8 @@
 	}
 	
 	.skills li, .projects li {
-	    background-color: #333; /* Darker theme */
-	    color: #f0f0f0; /* Lighter text for readability */
+	    background-color: #333;
+	    color: #f0f0f0;
 	    margin-bottom: 10px;
 	    padding: 10px;
 	    border-radius: 4px;
@@ -132,7 +130,7 @@
 	    display: flex;
 	    justify-content: center;
 	    align-items: center;
-	    flex-direction: column; /* Keeps elements stacked vertically */
+	    flex-direction: column;
 	    text-align: left;
 	    padding: 95px; 
 	    margin-top: 85px;
@@ -177,23 +175,18 @@
     	    text-decoration: underline;
 	}
 	
-	.projects ul {
-	    list-style: none; /* Removes bullet points */
-	    padding: 0;
-	}
-
 	@media (max-width: 768px) {
 	    .container {
 	        padding: 10px; /* Smaller padding on smaller screens */
 	    }
 	    .name-container h1 {
-	        font-size: 1.5rem; /* Smaller font size for smaller screens */
+	        font-size: 1.5rem; 
 	    }
 	    .profile-pic {
-	        width: 100px; /* Smaller on mobile */
-	        height: 100px; /* Keep aspect ratio */
-	        top: 1px; /* Adjust position so it doesn't overlap text */
-	        left: calc(50% - 50px); /* Center it */
+	        width: 100px; 
+	        height: 100px; 
+	        top: 1px; 
+	        left: calc(50% - 50px); 
 	    }
 
 	    .container-welcome {
@@ -201,13 +194,13 @@
 	    }
 
 	    .navbar a, .navbar a:visited {
-	        padding: 0 10px; /* Smaller padding */
-	        font-size: 14px; /* Smaller font size */
+	        padding: 0 10px; 
+	        font-size: 14px; 
 	    }
 
 	    .projects a {
-        	padding: 8px 12px; /* Slightly smaller padding on mobile */
-        	font-size: 14px; /* Slightly smaller font size for mobile */
+        	padding: 8px 12px; 
+        	font-size: 14px;
     	    }
 	}
 
@@ -231,36 +224,32 @@
         <img src="profile-pic.png" alt="Profile Picture" class="profile-pic">
     	
 	    
-            <p>As an operations manager, I first got into programming over 8 years ago when I identified a gap in our company's digital presence. I taught myself HTML and later Python, driven by the challenge to build and manage our website and digital projects. This experience not only sharpened my coding skills in a real-world scenerio but also expanded my role, eventually leading me into broader management within the construction sector. Despite enjoying the management and hands-on problem-solving in construction, my passion for programming remained, drawing me back to the tech world. I recently completed an 8-month AI project, focusing on enhancing coding capabilities in Python, where my role involved debugging and refining AI models to improve their accuracy.</p>
-            <p>I'm currently working on a passion project: a chatbot powered by custom GPT technology, influenced by my experience in prompt engineering and AI development for large companies. My journey through operations management, construction, and back to programming has equipped me with a unique perspective on user needs, thanks to my background in psychology and art. I aim to build intuitive, impactful digital solutions. Eager for collaboration, I'm all about turning great ideas into reality.</p>
+            <p>Starting in operations management, I dove into coding 8 years ago as part of my job, learning HTML and Python to address our company's digital needs. This experience not only sharpened my coding skills but also broadened my role in construction management. However, my love for coding called me back.</p> 	    <p>Recently, I wrapped up an 8-month AI project to polish my Python skills, focusing on improving AI model accuracy. Now, I'm excitedly working on a chatbot using custom GPT technology, drawing on my prompt engineering and AI background. With my mix of psychology, art, and varied experiences, I aim to craft user-friendly, impactful digital products. Looking forward to collaborating and bringing innovative ideas to life!</p>
         </header>
+    </div>
+
+    <div class="container projects" id="projects">
+    	<h2>Projects</h2>
+    	<ul>
+	        <li><a href="AI-ngel Bro - White Paper.pdf" target="_blank">AI-ngel Bro App White Paper</a></li>
+	        <li><a href="AI-ngel Bro - Figma Mockup.pdf" target="_blank">AI-ngel Bro Figma Mockup</a></li>
+	        <li><a href="AI-ngel Bro - Figma Flow.pdf" target="_blank">AI-ngel Bro Wireframe</a></li>
+	        <li><a href="AI-ngel Bro - Original Sketch.pdf" target="_blank">AI-ngel Bro Original Sketch</a></li>
+		<li><a href="Website Usability Testing Report 2023.pdf" target="_blank">Example Usability Testing Report</a></li>
+    	</ul>
     </div>
 
     <div class="container skills" id="skills">
         <h2>Skills</h2>
         <ul>
-            <li>Python & HTML: My bread and butter. The foundation of my programming expertise.</li>
-            <li>App Development: Bringing ideas to life across platforms with Flutter and React Native.</li>
-            <li>AI Data Training & Prompt Engineering: Deep-diving into the mechanics of AI and crafting prompts that guide them to insightful outputs.</li>
-            <li>Gardening & Sustainable Living Practices: Beyond the digital, I'm passionate about contributing to a greener planet.</li>
-	    <li>Creative Vision: I love to sketch, draw, paint, and build furniture in my woodshop.</li>
-	    <li>Communication: I have a gift for understanding clients' wants and needs and manifesting that vision into reality.</li>
-
+            <li>Python & HTML</li>
+            <li>App Development</li>
+            <li>AI Data Training & Prompt Engineering</li>
+            <li>Gardening & Sustainable Living Practices</li>
+	    <li>Creative Vision</li>
+	    <li>Communication</li>
         </ul>
     </div>
-
-    <div class="container projects" id="projects">
-    <h2>Projects</h2>
-    <ul>
-        <li><a href="AI-ngel Bro - White Paper.pdf" target="_blank">AI-ngel Bro App White Paper</a></li>
-        <li><a href="AI-ngel Bro - Figma Mockup.pdf" target="_blank">AI-ngel Bro Figma Mockup</a></li>
-        <li><a href="AI-ngel Bro - Figma Flow.pdf" target="_blank">AI-ngel Bro Wireframe</a></li>
-        <li><a href="AI-ngel Bro - Original Sketch.pdf" target="_blank">AI-ngel Bro Original Sketch</a></li>
-	<li><a href="Website Usability Testing Report 2023.pdf" target="_blank">Example Usability Testing Report</a></li>
-    </ul>
-</div>
-
-
 
 </body>
 </html> 
