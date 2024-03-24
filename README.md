@@ -1,5 +1,3 @@
----
-
 # Tristyn Eddie Watkins-Sanchez - Portfolio
 
 Welcome to the GitHub repository for my personal portfolio! This portfolio showcases a collection of my most significant projects, including my latest work on AI technologies, web development, and UX/UI design. Through this repository, you'll get a glimpse into my journey as a self-taught programmer, my problem-solving skills, and my passion for building impactful digital solutions.
@@ -33,5 +31,3 @@ I'm Tristyn, a passionate self-taught programmer with over eight years of hands-
 
 ## Connect With Me
 I'm always on the lookout for new challenges and opportunities to collaborate on exciting projects. Feel free to connect with me through [LinkedIn](https://www.linkedin.com/in/eddie-sanchez).
-
----
